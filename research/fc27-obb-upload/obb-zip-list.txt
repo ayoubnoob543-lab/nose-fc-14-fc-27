@@ -1,0 +1,9 @@
+Archive:  /home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-upload-2026-09-12/obb.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2024-07-17 18:42   obb/
+        0  2024-07-17 18:42   obb/com.ea.gp.fifaworld/
+1495716117  2022-08-04 07:42   obb/com.ea.gp.fifaworld/main.13.com.ea.gp.fifaworld.obb
+102869675  1985-12-24 21:50   obb/com.ea.gp.fifaworld/patch.26.com.ea.gp.fifaworld.obb
+---------                     -------
+1598585792                     4 files
