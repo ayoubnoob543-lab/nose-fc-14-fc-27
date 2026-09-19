@@ -6,7 +6,9 @@ Launcher Android pequeño para preparar automáticamente APK, OBB y DATA. El dis
 
 El prototipo incluye ahora la comprobación de actualizaciones mediante un manifiesto JSON HTTPS. Si detecta una versión superior, muestra una pantalla de actualización con versión, notas, tamaño y botones **Actualizar** / **Ahora no**. El APK de actualización se abre mediante el instalador seguro de Android; no se intenta instalar silenciosamente ni se incluyen credenciales.
 
-La URL provisional es `https://example.com/fc27/update.json` y debe sustituirse por la URL real del CDN antes de publicar. Todavía no es un APK de distribución final ni modifica los binarios originales.
+El manifiesto público de distribución está en `distribution.json` y apunta a los assets públicos de la Release del repositorio. El launcher descarga APK, OBB y las tres partes de DATA, valida SHA-256, recompone la DATA y extrae los ZIP en el almacenamiento privado del launcher. Android pedirá confirmación para instalar el APK del juego.
+
+Todavía no es un APK de distribución final: el entorno de esta sesión no tiene Android SDK/Gradle instalado para compilarlo, y el motor del juego puede exigir sus recursos en rutas propias de su paquete. Esa integración debe validarse en un dispositivo Android real.
 
 ## Manifiesto de actualización
 

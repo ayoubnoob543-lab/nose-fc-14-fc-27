@@ -1,0 +1,14 @@
+{
+  "launcher_version": "0.2.0",
+  "game_package": "com.ea.gp.fifaworld",
+  "game_apk_url": "https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-mahgames-2026-09-12/EA_SPORTS_FC_MOBILE_BETA.apk",
+  "game_apk_sha256": "1bcea18ab5c01f5ce7e6c4cdc132a591194fe80b07d22548d66c6f74fce34b01",
+  "obb_zip_url": "https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-mahgames-2026-09-12/obb.zip",
+  "obb_zip_sha256": "8c1e18a31e799a45c8e45f9e41a8662f7360c8e732d80aef8661d10d966e7b06",
+  "data_sha256": "739a822f51f774eba37bd12b2fe27aea0742ea0c451b42fe010df4e7bbb479b7",
+  "data_parts": [
+    {"url":"https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-mahgames-2026-09-12/Fifa16ModFC27.zip.part-00","sha256":"91dccfbe5048d5c1d34906e3915d5128845f322e6d2cd3d7e089db524701cc69","size_bytes":1887436800},
+    {"url":"https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-mahgames-2026-09-12/Fifa16ModFC27.zip.part-01","sha256":"7232d3ce2e0deaba63c5bef9235201462659d15aeac5f004e909a29301c90854","size_bytes":1887436800},
+    {"url":"https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-mahgames-2026-09-12/Fifa16ModFC27.zip.part-02","sha256":"3cb4ba8161fd8c61804284bef7bbe369a2b13af7549c9f0b8f20f85e59cc026e","size_bytes":1239990345}
+  ]
+}
