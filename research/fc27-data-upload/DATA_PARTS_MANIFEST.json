@@ -1,0 +1,24 @@
+{
+  "original_name": "Fifa16ModFC27.zip",
+  "original_size": 5014863945,
+  "original_sha256": "739a822f51f774eba37bd12b2fe27aea0742ea0c451b42fe010df4e7bbb479b7",
+  "part_size_bytes": 1800000000,
+  "parts": [
+    {
+      "name": "Fifa16ModFC27.zip.part-00",
+      "size": 1887436800,
+      "sha256": "91dccfbe5048d5c1d34906e3915d5128845f322e6d2cd3d7e089db524701cc69"
+    },
+    {
+      "name": "Fifa16ModFC27.zip.part-01",
+      "size": 1887436800,
+      "sha256": "7232d3ce2e0deaba63c5bef9235201462659d15aeac5f004e909a29301c90854"
+    },
+    {
+      "name": "Fifa16ModFC27.zip.part-02",
+      "size": 1239990345,
+      "sha256": "3cb4ba8161fd8c61804284bef7bbe369a2b13af7549c9f0b8f20f85e59cc026e"
+    }
+  ],
+  "reassemble": "cat Fifa16ModFC27.zip.part-* > Fifa16ModFC27.zip"
+}
