@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.FC27Launcher" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#1E88E5</item>
+    </style>
+</resources>
