@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "apk_url": "https://cdn.example.com/fc27/FC27-0.2.0.apk",
+  "sha256": "REPLACE_WITH_SHA256",
+  "size_bytes": 0,
+  "mandatory": false,
+  "notes": "Mejoras de descarga y actualización de recursos."
+}
