@@ -1,0 +1,216 @@
+=== FILES ===
+/home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-2026-09-12/EA_SPORTS_FC_MOBILE_BETA.apk: Android package (APK), with AndroidManifest.xml
+/home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-upload-2026-09-12/obb.zip:               Zip archive data, at least v2.0 to extract, compression method=store
+/home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-upload-2026-09-12/Fifa16ModFC27.zip:     Zip archive data, at least v2.0 to extract, compression method=store
+
+=== SHA256 ===
+1bcea18ab5c01f5ce7e6c4cdc132a591194fe80b07d22548d66c6f74fce34b01  /home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-2026-09-12/EA_SPORTS_FC_MOBILE_BETA.apk
+8c1e18a31e799a45c8e45f9e41a8662f7360c8e732d80aef8661d10d966e7b06  /home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-upload-2026-09-12/obb.zip
+739a822f51f774eba37bd12b2fe27aea0742ea0c451b42fe010df4e7bbb479b7  /home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-upload-2026-09-12/Fifa16ModFC27.zip
+
+=== APK SIGNATURE ===
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+
+=== APK BADGING ===
+package: name='com.ea.gp.fifaworld' versionCode='26' versionName='3.2.113645'
+install-location:'internalOnly'
+minSdkVersion:'19'
+targetSdkVersion:'27'
+application-label:'FC BETA'
+application-label-af:'FC BETA'
+application-label-am:'FC BETA'
+application-label-ar:'FC BETA'
+application-label-bg:'FC BETA'
+application-label-ca:'FC BETA'
+application-label-cs:'FC BETA'
+application-label-da:'FC BETA'
+application-label-de:'FC BETA'
+application-label-el:'FC BETA'
+application-label-en-GB:'FC BETA'
+application-label-en-IN:'FC BETA'
+application-label-es:'FC BETA'
+application-label-es-US:'FC BETA'
+application-label-et-EE:'FC BETA'
+application-label-fa:'FC BETA'
+application-label-fi:'FC BETA'
+application-label-fr:'FC BETA'
+application-label-fr-CA:'FC BETA'
+application-label-he:'FC BETA'
+application-label-hi:'FC BETA'
+application-label-hr:'FC BETA'
+application-label-hu:'FC BETA'
+application-label-hy-AM:'FC BETA'
+application-label-in:'FC BETA'
+application-label-it:'FC BETA'
+application-label-iw:'FC BETA'
+application-label-ja:'FC BETA'
+application-label-ka-GE:'FC BETA'
+application-label-km-KH:'FC BETA'
+application-label-ko:'FC BETA'
+application-label-lo-LA:'FC BETA'
+application-label-lt:'FC BETA'
+application-label-lv:'FC BETA'
+application-label-mn-MN:'FC BETA'
+application-label-ms-MY:'FC BETA'
+application-label-nb:'FC BETA'
+application-label-nl:'FC BETA'
+application-label-pl:'FC BETA'
+application-label-pt:'FC BETA'
+application-label-pt-BR:'FC BETA'
+application-label-pt-PT:'FC BETA'
+application-label-ro:'FC BETA'
+application-label-ru:'FC BETA'
+application-label-sk:'FC BETA'
+application-label-sl:'FC BETA'
+application-label-sr:'FC BETA'
+application-label-sv:'FC BETA'
+application-label-sw:'FC BETA'
+application-label-th:'FC BETA'
+application-label-tl:'FC BETA'
+application-label-tr:'FC BETA'
+application-label-uk:'FC BETA'
+application-label-vi:'FC BETA'
+application-label-zh-CN:'FC BETA'
+application-label-zh-HK:'FC BETA'
+application-label-zh-TW:'FC BETA'
+application-label-zu:'FC BETA'
+application-icon-120:'res/drawable/icon.png'
+application-icon-160:'res/drawable/icon.png'
+application-icon-240:'res/drawable/icon.png'
+application-icon-320:'res/drawable/icon.png'
+application-icon-480:'res/drawable/icon.png'
+application-icon-640:'res/drawable/icon.png'
+application: label='FC BETA' icon='res/drawable/icon.png'
+launchable-activity: name='com.ea.gp.fifaworld.fifa'  label='FC BETA' icon=''
+uses-permission: name='com.ea.gp.fifaworld.permission.C2D_MESSAGE'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.android.vending.CHECK_LICENSE'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.USE_CREDENTIALS'
+uses-permission: name='android.permission.MANAGE_ACCOUNTS'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.GET_ACCOUNTS'
+uses-permission: name='com.android.vending.BILLING'
+uses-permission: name='android.permission.READ_LOGS'
+uses-permission: name='net.dinglisch.android.tasker.PERMISSION_RUN_TASKS'
+uses-permission: name='android.permission.BLUETOOTH_ADMIN'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.CHANGE_WIFI_STATE'
+uses-permission: name='android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.USE_FINGERPRINT'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.BLUETOOTH'
+uses-permission: name='android.permission.WRITE_SETTINGS'
+uses-permission: name='android.permission.READ_SETTINGS'
+feature-group: label=''
+  uses-feature: name='android.hardware.bluetooth'
+  uses-implied-feature: name='android.hardware.bluetooth' reason='requested android.permission.BLUETOOTH permission, requested android.permission.BLUETOOTH_ADMIN permission, and targetSdkVersion > 4'
+
+=== APK ZIP TEST ===
+    testing: resources.arsc           OK
+    testing: META-INF/MANIFEST.MF     OK
+    testing: META-INF/CERT.SF         OK
+    testing: META-INF/CERT.RSA        OK
+No errors detected in compressed data of /home/ubuntu/work/nose-fc-14-fc-27/originals/fc27-mahgames-2026-09-12/EA_SPORTS_FC_MOBILE_BETA.apk.
+
+=== APK PERMISSIONS ===
+  android.permission.READ_SETTINGS
+!!android.permission.WRITE_SETTINGS
+""android.permission.BLUETOOTH_ADMIN
+""android.permission.MANAGE_ACCOUNTS
+""android.permission.USE_CREDENTIALS
+""android.permission.USE_FINGERPRINT
+$$android.permission.ACCESS_WIFI_STATE
+$$android.permission.CHANGE_WIFI_STATE
+&&android.permission.SYSTEM_ALERT_WINDOW
+''android.permission.ACCESS_NETWORK_STATE
+''com.google.android.c2dm.permission.SEND
+((android.permission.READ_EXTERNAL_STORAGE
+))android.permission.WRITE_EXTERNAL_STORAGE
+**com.ea.gp.fifaworld.permission.C2D_MESSAGE
+**com.google.android.c2dm.permission.RECEIVE
+77android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+android.permission.BLUETOOTH
+android.permission.GET_ACCOUNTS
+android.permission.INTERNET
+android.permission.READ_LOGS
+android.permission.VIBRATE
+android.permission.WAKE_LOCK
+permission
+uses-permission
+
+=== NATIVE LIBRARIES ===
+lib/armeabi-v7a/libcrashlytics-envelope.so
+lib/armeabi-v7a/libcrashlytics.so
+lib/armeabi-v7a/libfifa.so
+lib/armeabi-v7a/libgnustl_shared.so
+lib/armeabi-v7a/libnimble.so
+
+=== EXECUTABLE-LIKE DATA MEMBERS ===
+com.ea.gp.fifaworld/data/nis/nisnames.bin
+com.ea.gp.fifaworld/data/nis/scripts.bin
+com.ea.gp.fifaworld/data/replay/replays.bin
+com.ea.gp.fifaworld/replay0.bin
+
+=== SUSPICIOUS URL/COMMAND STRINGS IN APK ===
+Su 
+http://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.js
+http://developers.facebook.com/docs/reference/rest/
+DexClassLoader
+https://fabric.io/sign_up,
+http://cdn.skum.eamobile.com
+http://googleads.g.doubleclick.net
+http://media.admob.com/mraid/v1/mraid_app_banner.js
+http://media.admob.com/mraid/v1/mraid_app_expanded_banner.js
+http://media.admob.com/mraid/v1/mraid_app_interstitial.js
+http://plus.google.com/
+http://schemas.android.com/apk/lib/com.google.android.gms.plus
+http://www.amazon.com/gp/mas/get-appstore/android/ref=mas_mx_mba_iap_dl
+http://www.ea.com
+http://www.google.com
+http://xmlpull.org/v1/doc/features.html#process-namespaces
+https://.facebook.com
+https://api.facebook.com/restserver.php
+https://director-int.sn.eamobile.com
+https://director-stage.sn.eamobile.com
+https://e.crashlytics.com/spi/v2/events
+https://facebook.com
+https://graph-video.%s
+https://graph.%s
+https://graph.facebook.com/
+https://graph.facebook.com/%s/picture
+https://graph.facebook.com/%s/picture?type=normal
+https://m.facebook.com/dialog/
+https://play.google.com/store/apps/details?id=
+https://settings.crashlytics.com/spi/v2/platforms/android/apps/%s/settings
+https://syn-dir.sn.eamobile.com
+https://www.googleapis.com/auth/appstate
+https://www.googleapis.com/auth/drive.file
+https://www.googleapis.com/auth/games
+https://www.googleapis.com/auth/games.firstparty
+https://www.googleapis.com/auth/plus.login
+https://www.googleapis.com/auth/plus.me
+loadLibrary
+http://media.admob.com/mraid/v1/mraid_app_banner.js)
+http://media.admob.com/mraid/v1/mraid_app_expanded_banner.js)
+http://media.admob.com/mraid/v1/mraid_app_interstitial.js)
+
+=== OBB CONTENT ===
+obb/
+obb/com.ea.gp.fifaworld/
+obb/com.ea.gp.fifaworld/main.13.com.ea.gp.fifaworld.obb
+obb/com.ea.gp.fifaworld/patch.26.com.ea.gp.fifaworld.obb

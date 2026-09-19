@@ -3,3 +3,8 @@
 /research/extracted/
 /research/tmp/
 /release-assets/
+/launcher/.gradle/
+/launcher/app/build/
+/research/fc27-obb-upload/extracted/
+/research/fc27-obb-upload/ui-visual-candidates.txt
+/research/security-scan-2026-09-20/classes-strings.txt
