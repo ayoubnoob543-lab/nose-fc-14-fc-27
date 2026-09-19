@@ -1,0 +1,48 @@
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 162
+content-type: text/html; charset=utf-8
+location: https://fifa-14.en.uptodown.com/android/download
+strict-transport-security: max-age=16000000; includeSubDomains; preload
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: SAMEORIGIN
+X-Edge-Control-Remove: true
+Content-Encoding: br
+Accept-Ranges: bytes
+Age: 0
+Date: Sat, 19 Sep 2026 14:42:50 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830033-CCU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1789828970.401468,VS0,VE203
+Vary: Accept-Encoding
+Expires: Sat, 19 Sep 2026 14:42:50 GMT
+Cache-Control: private, no-store, no-cache
+Set-Cookie: country=BD; Domain=.uptodown.com; Path=/; max-age=86400;
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 27535
+x-robots-tag: index,follow
+referrer-policy: strict-origin-when-cross-origin
+content-type: text/html;charset=UTF-8
+via: 1.1 varnish, 1.1 varnish
+strict-transport-security: max-age=16000000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+X-Edge-Control-Remove: true
+Content-Encoding: br
+Accept-Ranges: bytes
+Age: 0
+Date: Sat, 19 Sep 2026 14:42:51 GMT
+X-Served-By: cache-ccu830040-CCU, cache-ccu830040-CCU, cache-ccu830033-CCU
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1789828971.979614,VS0,VE444
+Vary: Accept-Encoding
+Expires: Sat, 19 Sep 2026 14:42:51 GMT
+Cache-Control: private, no-store, no-cache
+Set-Cookie: country=BD; Domain=.uptodown.com; Path=/; max-age=86400;
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+

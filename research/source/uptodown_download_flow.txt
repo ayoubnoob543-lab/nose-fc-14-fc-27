@@ -1,0 +1,5 @@
+Uptodown download flow observed from the public 1.3.6 page:
+POST /ajax/app/24324/file/106882374/download-url
+JSON body: {"token":"<Cloudflare Turnstile token>","onlyXapk":"0"}
+The response field data.downloadURL is prefixed by https://dw.uptodown.com/dwn/.
+The site requires a valid Turnstile token before it returns the XAPK path.
