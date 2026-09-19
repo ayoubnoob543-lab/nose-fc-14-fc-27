@@ -1,0 +1,9 @@
+{
+  "name": "FC27.apk",
+  "version": "0.2.0",
+  "size_bytes": 6057099,
+  "sha256": "bda30035886f11307ddad065ac43133e421486599ec2d402f80550a094c2c826",
+  "build_variant": "debug-signed test build",
+  "min_sdk": 23,
+  "target_sdk": 35
+}
