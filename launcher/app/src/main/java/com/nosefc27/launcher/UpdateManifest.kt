@@ -5,6 +5,7 @@ import org.json.JSONObject
 /** Public JSON contract served over HTTPS by the future CDN/repository. */
 data class UpdateManifest(
     val version: String,
+    val versionCode: Int,
     val apkUrl: String,
     val sha256: String,
     val sizeBytes: Long,
@@ -16,6 +17,7 @@ data class UpdateManifest(
             val o = JSONObject(json)
             return UpdateManifest(
                 version = o.getString("version"),
+                versionCode = o.getInt("version_code"),
                 apkUrl = o.getString("apk_url"),
                 sha256 = o.getString("sha256"),
                 sizeBytes = o.getLong("size_bytes"),

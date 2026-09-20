@@ -1,8 +1,9 @@
 {
-  "version": "0.2.0",
-  "apk_url": "https://cdn.example.com/fc27/FC27-0.2.0.apk",
-  "sha256": "REPLACE_WITH_SHA256",
+  "version": "0.3.0",
+  "version_code": 2,
+  "apk_url": "https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-launcher-0.3.0/FC27.apk",
+  "sha256": "REPLACE_WITH_RELEASE_SHA256",
   "size_bytes": 0,
   "mandatory": false,
-  "notes": "Mejoras de descarga y actualización de recursos."
+  "notes": "Descargas con archivos parciales, verificación de integridad, extracción transaccional y controles de espacio. Publicar solo después de una build release firmada."
 }
