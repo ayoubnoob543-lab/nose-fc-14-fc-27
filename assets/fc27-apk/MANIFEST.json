@@ -1,0 +1,8 @@
+{
+  "artifact": "APK",
+  "filename": "EA_SPORTS_FC_MOBILE_BETA.apk",
+  "source_path": "release/fc27-mahgames-2026-09-12/EA_SPORTS_FC_MOBILE_BETA.apk",
+  "size_bytes": 30670718,
+  "sha256": "1bcea18ab5c01f5ce7e6c4cdc132a591194fe80b07d22548d66c6f74fce34b01",
+  "distribution": "GitHub Release asset; branch contains manifest and APK only"
+}
