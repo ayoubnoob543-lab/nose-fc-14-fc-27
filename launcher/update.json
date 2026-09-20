@@ -1,9 +1,9 @@
 {
-  "version": "0.3.1",
-  "version_code": 3,
-  "apk_url": "https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-launcher-0.3.1/FC27-launcher-0.3.1.apk",
-  "sha256": "7ffd526c775f16c7c27d2a617fb5e32f163a05bca8d4a21696b10e049f2dd885",
-  "size_bytes": 4908514,
+  "version": "0.3.2",
+  "version_code": 4,
+  "apk_url": "https://github.com/ayoubnoob543-lab/nose-fc-14-fc-27/releases/download/fc27-launcher-0.3.2/FC27-launcher-0.3.2.apk",
+  "sha256": "ad557af5d389873755591ca79200c6c6a6a019338187daf8d57da7f55456b30f",
+  "size_bytes": 4904418,
   "mandatory": false,
-  "notes": "Nuevo icono FC 27 y mejoras del launcher. Descarga y verifica los recursos mediante HTTPS."
+  "notes": "Versión de seguridad: elimina la instalación automática de APK y solicita instalación manual mediante Android."
 }

@@ -5,14 +5,12 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.StatFs
-import android.provider.Settings
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -106,9 +104,9 @@ class MainActivity : AppCompatActivity() {
                 prepared.deleteRecursively()
                 check(staging.renameTo(prepared)) { "No se pudo activar la preparación" }
                 withContext(Dispatchers.Main) {
-                    status.text = "Descarga verificada y recursos preparados.\n\nAndroid pedirá instalar el APK del juego."
-                    action.text = "Instalar juego"
-                    action.setOnClickListener { installApk(apk) }
+                    status.text = "Descarga verificada y recursos preparados.\n\nPulsa para abrir la descarga del APK del juego e instalarlo manualmente."
+                    action.text = "Abrir descarga del juego"
+                    action.setOnClickListener { openExternal(d.apkUrl) }
                     action.isEnabled = true
                 }
             } catch (e: Exception) {
@@ -135,20 +133,8 @@ class MainActivity : AppCompatActivity() {
         check(partial.renameTo(file)) { "No se pudo guardar $label" }
     }
 
-    private fun installApk(apk: File) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !packageManager.canRequestPackageInstalls()) {
-            startActivity(Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:$packageName")))
-            status.text = "Activa Permitir desde esta fuente y vuelve para instalar."
-            return
-        }
-        val uri = FileProvider.getUriForFile(this, "${BuildConfig.APPLICATION_ID}.files", apk)
-        val intent = Intent(Intent.ACTION_VIEW).apply {
-            setDataAndType(uri, "application/vnd.android.package-archive")
-            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            clipData = android.content.ClipData.newRawUri("FC27 APK", uri)
-        }
-        check(intent.resolveActivity(packageManager) != null) { "No hay instalador de APK disponible" }
-        startActivity(intent)
+    private fun openExternal(url: String) {
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
     }
 
     private fun extractZip(zip: File, destination: File) {
@@ -198,10 +184,10 @@ class MainActivity : AppCompatActivity() {
                 val target = File(filesDir, "downloads/FC27-update-${manifest.version}.apk")
                 download("actualización ${manifest.version}", manifest.apkUrl, target, manifest.sizeBytes, manifest.sha256)
                 withContext(Dispatchers.Main) {
-                    status.text = "Actualización verificada. Android pedirá confirmar la instalación."
-                    action.text = "Instalar actualización"
+                    status.text = "Actualización descargada y verificada. Ábrela desde el navegador/gestor de archivos para instalarla manualmente."
+                    action.text = "Abrir página de actualización"
                     action.isEnabled = true
-                    action.setOnClickListener { installApk(target) }
+                    action.setOnClickListener { openExternal(manifest.apkUrl) }
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
