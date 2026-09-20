@@ -184,17 +184,40 @@ class MainActivity : AppCompatActivity() {
             val installed = BuildConfig.VERSION_CODE
             if (manifest.versionCode <= installed) return@launch
             val message = "Hay una nueva versión de FC 27: ${manifest.version}\n\n${manifest.notes}\n\nTamaño: ${formatBytes(manifest.sizeBytes)}"
-            val dialog = AlertDialog.Builder(this@MainActivity).setTitle("Actualizar FC 27").setMessage(message)
-                .setPositiveButton("Descargar") { _, _ -> status.text = "La actualización segura se habilitará cuando el APK esté firmado y verificado." }
+                val dialog = AlertDialog.Builder(this@MainActivity).setTitle("Actualizar FC 27").setMessage(message)
+                .setPositiveButton("Descargar") { _, _ -> downloadUpdate(manifest) }
             if (!manifest.mandatory) dialog.setNegativeButton("Ahora no", null)
             dialog.setCancelable(!manifest.mandatory).show()
+        }
+    }
+
+    private fun downloadUpdate(manifest: UpdateManifest) {
+        action.isEnabled = false
+        lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                val target = File(filesDir, "downloads/FC27-update-${manifest.version}.apk")
+                download("actualización ${manifest.version}", manifest.apkUrl, target, manifest.sizeBytes, manifest.sha256)
+                withContext(Dispatchers.Main) {
+                    status.text = "Actualización verificada. Android pedirá confirmar la instalación."
+                    action.text = "Instalar actualización"
+                    action.isEnabled = true
+                    action.setOnClickListener { installApk(target) }
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    status.text = "No se pudo actualizar: ${e.message ?: "error desconocido"}"
+                    action.text = "Reintentar actualización"
+                    action.isEnabled = true
+                    action.setOnClickListener { downloadUpdate(manifest) }
+                }
+            }
         }
     }
 
     private fun fetchText(url: String): String? = runCatching {
         require(url.startsWith("https://"))
         val connection = URL(url).openConnection() as HttpURLConnection
-        connection.connectTimeout = 10_000; connection.readTimeout = 15_000; connection.instanceFollowRedirects = false
+        connection.connectTimeout = 10_000; connection.readTimeout = 15_000; connection.instanceFollowRedirects = true
         check(connection.responseCode == HttpURLConnection.HTTP_OK) { "HTTP ${connection.responseCode}" }
         check(connection.contentLengthLong <= MAX_MANIFEST_BYTES || connection.contentLengthLong < 0) { "Manifiesto demasiado grande" }
         connection.inputStream.use { input ->

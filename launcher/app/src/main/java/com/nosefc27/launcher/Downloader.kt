@@ -16,7 +16,7 @@ object Downloader {
             connection = (URL(url).openConnection() as HttpURLConnection).apply {
                 connectTimeout = 20_000
                 readTimeout = 60_000
-                instanceFollowRedirects = false
+                instanceFollowRedirects = true
                 if (existing > 0) setRequestProperty("Range", "bytes=$existing-")
             }
             val code = connection.responseCode
@@ -28,7 +28,7 @@ object Downloader {
                 connection = (URL(url).openConnection() as HttpURLConnection).apply {
                     connectTimeout = 20_000
                     readTimeout = 60_000
-                    instanceFollowRedirects = false
+                    instanceFollowRedirects = true
                 }
             } else if (existing > 0 && code == HttpURLConnection.HTTP_OK) {
                 // Server ignored Range: restart explicitly instead of appending duplicate bytes.

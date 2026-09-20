@@ -4,11 +4,11 @@ Launcher Android pequeño para preparar automáticamente APK, OBB y DATA. El dis
 
 ## Estado
 
-El prototipo incluye ahora la comprobación de actualizaciones mediante un manifiesto JSON HTTPS. Si detecta una versión superior, muestra una pantalla de actualización con versión, notas, tamaño y botones **Actualizar** / **Ahora no**. El APK de actualización se abre mediante el instalador seguro de Android; no se intenta instalar silenciosamente ni se incluyen credenciales.
+La versión 0.3.0 incluye comprobación de actualizaciones mediante un manifiesto JSON HTTPS. Si detecta una versión superior, muestra una pantalla de actualización, descarga el APK, verifica su SHA-256 y lo abre mediante el instalador seguro de Android; no se intenta instalar silenciosamente ni se incluyen credenciales.
 
 El manifiesto público de distribución está en `distribution.json` y apunta a los assets públicos de la Release del repositorio. El launcher descarga APK, OBB y las tres partes de DATA, valida SHA-256, recompone la DATA y extrae los ZIP en el almacenamiento privado del launcher. Android pedirá confirmación para instalar el APK del juego.
 
-Todavía no es un APK de distribución final: el entorno de esta sesión no tiene Android SDK/Gradle instalado para compilarlo, y el motor del juego puede exigir sus recursos en rutas propias de su paquete. Esa integración debe validarse en un dispositivo Android real.
+El APK 0.3.0 de la release está compilado con target Android 35 y firmado con la clave de distribución del proyecto. La preparación de recursos está implementada y verificada estáticamente. La copia automática a `Android/obb` o `Android/data` de otro paquete no puede garantizarse en Android 14/15 por las restricciones de Scoped Storage; esa parte requiere validación en un dispositivo y, si el juego no admite almacenamiento privado del launcher, una acción explícita del usuario o una integración distinta.
 
 ## Manifiesto de actualización
 
@@ -40,4 +40,4 @@ El manifiesto debe servirse por HTTPS y el APK debe publicarse con un hash SHA-2
 
 ## Alojamiento
 
-La Release actual de GitHub es privada y no es válida como origen para usuarios anónimos. Antes de una release pública del launcher habrá que elegir un almacenamiento público de distribución y colocar sus URL en el manifiesto. No se deben incrustar credenciales de GitHub en el APK. Los archivos del juego solo deben publicarse si existe autorización para redistribuirlos.
+Las releases públicas de GitHub se usan como origen sin incrustar credenciales en el APK. Los archivos del juego solo deben publicarse si existe autorización para redistribuirlos. La clave de firma debe conservarse fuera del repositorio: las futuras actualizaciones del launcher deben firmarse con la misma clave.
