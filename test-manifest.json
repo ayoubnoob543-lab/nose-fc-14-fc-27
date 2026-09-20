@@ -1,5 +1,7 @@
 {
-  "probe_url": "https://raw.githubusercontent.com/ayoubnoob543-lab/nose-fc-14-fc-27/master/test-assets/fc-prueba.bin",
-  "sha256": "30e14955ebf1352266dc2ff8067e68104607e750abb9d3b36582b8af909fcb58",
+  "data_probe_url": "https://raw.githubusercontent.com/ayoubnoob543-lab/nose-fc-14-fc-27/master/test-assets/fc-prueba-data.bin",
+  "data_sha256": "44d45436b35f5b30c8356da745d2364d1658fe129bf68d5927560528bc9890c4",
+  "obb_probe_url": "https://raw.githubusercontent.com/ayoubnoob543-lab/nose-fc-14-fc-27/master/test-assets/fc-prueba-obb.bin",
+  "obb_sha256": "ee6bb1272735ec4c912690336cb52398203eb9dc4432b98a055c179d73a4e6c8",
   "size_bytes": 1048576
 }
