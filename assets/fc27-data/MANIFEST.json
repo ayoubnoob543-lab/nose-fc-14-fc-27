@@ -1,0 +1,12 @@
+{
+  "artifact": "DATA",
+  "filename": "Fifa16ModFC27.zip",
+  "size_bytes": 5014863945,
+  "sha256": "739a822f51f774eba37bd12b2fe27aea0742ea0c451b42fe010df4e7bbb479b7",
+  "parts": [
+    {"filename":"Fifa16ModFC27.zip.part-00","size_bytes":1887436800},
+    {"filename":"Fifa16ModFC27.zip.part-01","size_bytes":1887436800},
+    {"filename":"Fifa16ModFC27.zip.part-02","size_bytes":1239990345}
+  ],
+  "distribution": "GitHub Release assets; parts are reassembled in order and verified against sha256"
+}
